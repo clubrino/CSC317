@@ -10,32 +10,45 @@
 ## HTML Personal Portfolio Website Assignment
 
 ### **Description**
-Provide a brief overview of the assignment. Explain the objective, key tasks, and any relevant background information.
+In this assignment, I created a personal portfolio using HTML. The assignment allowed me to understand the foundation of HTML fundamentals, structure,
+and praactice web development. The objectives of this assignment was to add personal information, styling, layouto, and enhancement. I added the school
+logo, hometown logo, and an audio element to create personalization. The page is reminiscent of early 2000s website portfolios. Growing up, HTML always came in hand
+when personalizing a website. (geocities, xanga, blogspot, and tumblr) For the HTML, I was able to search up layout references and play with the features.
 
 ### **Approach / What I Did**
-Describe your approach to building the HTML structure. Explain design choices, layout decisions, and how elements are structured.
+Building the HTML, I initially followed the template of the web structure. I began by creading the head, header, navigation, and sections first. 
+This way, I was able to visualize the work from HTML to web layout. I kept fixing the texts and organization to be more fluid. The elemetns are 
+structured in a matter of efficieny and prioritization. I wanted to create a story with the use of my background, experience, interests, and how it connects to my project. 
+
 
 ---
 
 ## **Code Explanation**
-Highlight key parts of your HTML code and explain their purpose. Use code blocks for clarity.
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 
 <!--HEAD-->
+<!--Used <link rel> to add favicon that will display on browser tab.-->
 <head>
     <link rel="icon" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="192x192" href="images/192x192.png">
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio of Cielina Lubrino, a Computer Science student at SFSU." />
     <meta name="keywords" content="Cielna Lubrino,portfolio, computer science, web development, software engineering" />
     <meta name="author" content="Cielina Lubrino" />
+    <!--<meta> allows content values. This allows search engines to pull up content.-->
+
     <title>Cielina Lubrino - CS Student Portfolio</title>
 
     <!--CSS-->
+    <!--Styling and layout structure to make the website more organized.-->
+    <!--Structures the experience table to be more cohesive.-->
+    <!--Centers the audio player and display album picture.-->
+    <!--Education section, I wanted it to also be at the center. However this was the most efficient and articulate to display.-->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -66,7 +79,6 @@ Highlight key parts of your HTML code and explain their purpose. Use code blocks
             text-align: justify;
             line-height: 1.5;
         }
-
         .media-container {
             display: flex;
             flex-direction: column;
@@ -74,14 +86,12 @@ Highlight key parts of your HTML code and explain their purpose. Use code blocks
             gap: 10px;
             text-align: center;
         }
-
         table {
             width: 80%;
             margin: auto;
             border-collapse: collapse;
             text-align: center;
         }
-
         th, td {
             padding: 10px;
             border: 1px solid black;
@@ -101,7 +111,6 @@ Highlight key parts of your HTML code and explain their purpose. Use code blocks
             #education li {
                 margin-bottom: 10px;
             }
-
             #education ul ul {
                 margin-left: 20px;
             }
@@ -118,7 +127,6 @@ Highlight key parts of your HTML code and explain their purpose. Use code blocks
                 color: #444;
                 font-weight: bold;
             }
-
                 .contact-links a:hover {
                     color: #0073b1;
                 }
@@ -134,6 +142,7 @@ Highlight key parts of your HTML code and explain their purpose. Use code blocks
     <h2>Belleville,New Jersey</h2>
 
 </header>
+    <!--header section will show my name, profile picture, school, and hometown.-->
 
 <!-- NAVIGATION -->
 <nav>
@@ -145,13 +154,15 @@ Highlight key parts of your HTML code and explain their purpose. Use code blocks
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
+    <!--Navigation section that allows individual to  click to certain section.-->
 
 <!-- ABOUT SECTION -->
 <section id="about">
     <h2 style="font-size: 1.8em; text-align: center; color: #444;">About Me</h2>
+    <!--Customized the header font to be grey and centered.-->
     <!-- SCHOOL LOGO -->
     <img src="images/sfsulogo.png" alt="School logo" width="200">
-
+    <!--Customized logo size to be fit and not too obscure-->
     <p style="text-align: justify; text-indent: 20px; line-height: 1.5; margin-bottom: 10px;">
         I am a student passionate about design and technological advancement. I enjoy learning new things and applying them into projects.
         I am working towards a Computer Science degree at San Francisco State University. I'm interested in web development, software engineering,
@@ -174,7 +185,7 @@ Highlight key parts of your HTML code and explain their purpose. Use code blocks
         </audio>
     </div>
 </section>
-
+<!--Audio element in <div> to create an organize selection. This wrap the image and audio player. CSS allows styling to be centered.-->
 
 <!-- EDUCATION SECTION -->
 <section id="education">
@@ -251,6 +262,7 @@ Highlight key parts of your HTML code and explain their purpose. Use code blocks
         <a href="https://github.com/clubrino" target="_blank">GitHub</a>
      </div>
     </section>
+<!--use of <href> to direct links to Github and LinkedIn-->
 
     <!--GOOGLE MAPS-->
     <section id="location">
@@ -260,8 +272,9 @@ Highlight key parts of your HTML code and explain their purpose. Use code blocks
                 style="border:0;"
                 allowfullscreen=""
                 loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
 
+    </section>
+<!--iframe allows embed content. I chose to add the SFSU location off google maps.-->
     <!-- FOOTER -->
     <footer style="background-color: #808080; color: white; text-align: center; padding: 15px; margin-top: 20px;">
         <p>&copy; 2025 Cielina Lubrino &bull; All rights reserved </p>
