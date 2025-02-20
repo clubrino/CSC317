@@ -1,0 +1,271 @@
+# CSC 317 Assignment 2 Submission
+
+**Name:** Cielina Lubrino
+**Student ID:** 923307993
+**GitHub Username:** clubrino  
+**Assignment Number:** 2  
+
+---
+
+## HTML Personal Portfolio Website Assignment
+
+### **Description**
+Provide a brief overview of the assignment. Explain the objective, key tasks, and any relevant background information.
+
+### **Approach / What I Did**
+Describe your approach to building the HTML structure. Explain design choices, layout decisions, and how elements are structured.
+
+---
+
+## **Code Explanation**
+Highlight key parts of your HTML code and explain their purpose. Use code blocks for clarity.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<!--HEAD-->
+<head>
+    <link rel="icon" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/192x192.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Cielina Lubrino, a Computer Science student at SFSU." />
+    <meta name="keywords" content="Cielna Lubrino,portfolio, computer science, web development, software engineering" />
+    <meta name="author" content="Cielina Lubrino" />
+    <title>Cielina Lubrino - CS Student Portfolio</title>
+
+    <!--CSS-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+            nav ul li {
+                display: inline;
+            }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        p {
+            width: 60%;
+            margin: auto;
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+        .media-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            text-align: center;
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        #education {
+            text-align: center;
+        }
+
+            #education ul {
+                width: 60%;
+                margin: auto;
+                text-align: left;
+                padding-left: 0;
+            }
+
+            #education li {
+                margin-bottom: 10px;
+            }
+
+            #education ul ul {
+                margin-left: 20px;
+            }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+            .contact-links a {
+                text-decoration: none;
+                font-size: 1.2em;
+                color: #444;
+                font-weight: bold;
+            }
+
+                .contact-links a:hover {
+                    color: #0073b1;
+                }
+    </style>
+
+</head>
+
+<!-- HEADER -->
+<header style="background-color: #eebee4; color: white; text-align: center; padding: 15px 0;">
+    <img src="images/me.jpg" alt="Cielina Lubrino" width="200">
+    <h1>Cielina Lubrino</h1>
+    <h2>San Francisco State University</h2>
+    <h2>Belleville,New Jersey</h2>
+
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+    <h2 style="font-size: 1.8em; text-align: center; color: #444;">About Me</h2>
+    <!-- SCHOOL LOGO -->
+    <img src="images/sfsulogo.png" alt="School logo" width="200">
+
+    <p style="text-align: justify; text-indent: 20px; line-height: 1.5; margin-bottom: 10px;">
+        I am a student passionate about design and technological advancement. I enjoy learning new things and applying them into projects.
+        I am working towards a Computer Science degree at San Francisco State University. I'm interested in web development, software engineering,
+        and user experience design.
+    </p>
+
+    <!-- HOMETOWN LOGO -->
+    <img src="images/Belleville-NJ-Seal.png" alt="Hometown logo" width="200">
+
+    <p>
+        I moved here to the Bay Area from Belleville, New Jersey, known for its beautiful cherry blossom trees.Outside of school, I enjoy reading books, taking long walks in Golden Gate Park, and keeping up with the latest music scene. My favorite music
+        genres is Hip Hop, House, RnB, Rock, and Bossa Nova.My favorite song is "It Ain't Over Til It's Over" by Lenny Kravitz.
+    </p>
+
+    <!--AUDIO ELEMENT-->
+    <div class="media-container">
+        <img src="images/lenny.jpg" alt="music" width="200">
+        <audio controls>
+            <source src="audio/05.mp3" type="audio/mp3" />
+        </audio>
+    </div>
+</section>
+
+
+<!-- EDUCATION SECTION -->
+<section id="education">
+    <h2 style="font-size: 1.8em; text-align: center; color: #444;">Education</h2>
+    <ul style="list-style-position: inside; text-align:left;">
+        <li>
+            <strong>San Francisco State University</strong>
+            <ul>
+                <li>Major: Computer Science</li>
+                <li>Expected Graduation: Spring 2026</li>
+            </ul>
+        </li>
+        <li>
+            <strong>City College Of San Francisco</strong>
+            <ul>
+                <li>Major: Computer Science</li>
+            </ul>
+        </li>
+        <li>
+            <strong>School of Fashion Design</strong>
+            <ul>
+                <li>Major: Fashion Design and Marketing</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<!-- EXPERIENCE SECTION -->
+<section id="experience">
+    <h2 style="font-size: 1.8em; color: #444;">Experience</h2>
+    <table style="border-collapse: collapse; width: 60%; margin: 0 auto;">
+        <tr>
+            <td>Barista</td>
+            <td>Compton's Coffee</td>
+            <td>2023-2024</td>
+        </tr>
+        <tr>
+            <td>Dialysis Tech</td>
+            <td>Davita</td>
+            <td>2018-2020</td>
+        </tr>
+        <tr>
+            <td>Office Assistant</td>
+            <td>Generations Healthcare</td>
+            <td>2017-2018</td>
+        </tr>
+        <tr>
+            <td>Sales Employee</td>
+            <td>G-Star</td>
+            <td>2016-2017</td>
+        </tr>
+    </table>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects">
+    <h2 style="font-size:1.8em;color:#444;">Projects</h2>
+    <ul style="list-style:none;padding:0;">
+        <li style="margin-bottom: 15px;">
+            <h3>Song Sample Tracker</h3>
+            <p>
+                This passion project is to develop a website that will track different song
+                samples used in the music industry. It can serve as a tool for producers, DJs, and musicians.
+            </p>
+        </li>
+
+</section>
+
+<!--IFRAMES--->
+<section id="contact">
+    <h2 style="font-size: 1.8em; text-align:center;color: #444;">Contact Me</h2>
+    <div class="contact-links">
+        <a href="https://www.linkedin.com/in/cielina-lubrino-5882a6200/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/clubrino" target="_blank">GitHub</a>
+     </div>
+    </section>
+
+    <!--GOOGLE MAPS-->
+    <section id="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3155.8094993189343!2d-122.48251542257653!3d37.7241491719981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7db005c0e281%3A0xa57a7c9f946a45d3!2sSan%20Francisco%20State%20University!5e0!3m2!1sen!2sus!4v1739940415268!5m2!1sen!2sus"
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- FOOTER -->
+    <footer style="background-color: #808080; color: white; text-align: center; padding: 15px; margin-top: 20px;">
+        <p>&copy; 2025 Cielina Lubrino &bull; All rights reserved </p>
+    </footer>
+
+    </body>
+</html>
