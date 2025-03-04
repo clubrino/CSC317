@@ -1,0 +1,39 @@
+/*
+    Author: Cielina Lubrino
+*/
+
+/*1. Global Style & Variables*/
+:root {
+    --primary-color: #ffc0fe
+    --secondary-color: #ffffff
+    --text-color: #0c0b0b
+    --spacing-unit:1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*Typhography*/
+body {
+    font-family: 'Franklin Gothic Medium', sans-serif
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+h1, h2, h3, {
+    color:var(--primary-color);
+    margin-bottom: var(--spacing-unit);
+}
+
+header {
+    text-align: center;
+    padding: calc(var(--spacing-unit)*2);
+    background-color: var(--primary-color);
+    color:white;
+}
+
+/*3. Layout & NAvigation*/
