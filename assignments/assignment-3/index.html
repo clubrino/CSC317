@@ -17,7 +17,9 @@
 <body>
     <!-- HEADER -->
     <header>
-        <img src="images/me.jpg" alt="Cielina Lubrino" width="200">
+        <div class="me-container">
+            <img src="images/me.jpg" alt="Cielina Lubrino" width="200">
+        </div>
         <h1>Cielina Lubrino</h1>
         <h2>San Francisco State University</h2>
         <h2>Belleville,New Jersey</h2>
@@ -39,7 +41,10 @@
     <section id="about">
         <h2>About Me</h2>
         <!-- SCHOOL LOGO -->
-        <img src="images/sfsulogo.png" alt="School logo" width="200">
+        <div class="image-container">
+            <img src="images/sfsulogo.png" alt="School logo" width="200">
+         </div>  
+
 
         <p style="text-align: justify; text-indent: 20px; line-height: 1.5; margin-bottom: 10px;">
             I am a student passionate about design and technological advancement. I enjoy learning new things and applying them into projects.
@@ -48,7 +53,9 @@
         </p>
 
         <!-- HOMETOWN LOGO -->
-        <img src="images/Belleville-NJ-Seal.png" alt="Hometown logo" width="200">
+        <div class="image-container">
+            <img src="images/Belleville-NJ-Seal.png" alt="Hometown logo" width="200">
+        </div>
 
         <p>
             I moved here to the Bay Area from Belleville, New Jersey, known for its beautiful cherry blossom trees.Outside of school, I enjoy reading books,
@@ -57,7 +64,7 @@
         </p>
 
         <!--AUDIO ELEMENT-->
-        <div class="media-container">
+        <div class="image-container">
             <img src="images/lenny.jpg" alt="music" width="200">
             <audio controls>
                 <source src="audio/05.mp3" type="audio/mp3">
@@ -69,54 +76,49 @@
     <!-- EDUCATION SECTION -->
     <section id="education">
         <h2> Education </h2>
-        <ul style="list-style-position: inside; text-align:left;">
-            <li>
-                <strong>San Francisco State University</strong>
-                <ul>
-                    <li>Major: Computer Science</li>
-                    <li>Expected Graduation: Spring 2026</li>
-                </ul>
-            </li>
-            <li>
-                <strong>City College Of San Francisco</strong>
-                <ul>
-                    <li>Major: Computer Science</li>
-                </ul>
-            </li>
-            <li>
-                <strong>School of Fashion Design</strong>
-                <ul>
-                    <li>Major: Fashion Design and Marketing</li>
-                </ul>
-            </li>
-        </ul>
+        <div class="education-container">
+            <div class="education-item">
+                <h3>San Francisco State University</h3>
+                <p class="degree">Major: Computer Science</p>
+                <p class="dates">Expected Graduation: Spring 2026</p>
+             </div>
+
+            <div class="education-item">
+               <h3>City College Of San Francisco</h3>
+               <p class="degree">Major: Computer Science</p>
+            <div class="education-item">
+               <h3>School of Fashion Design</h3>
+               <p class="degree">Major: Fashion Design and Marketing</p>
+            </div>
+        </div>
     </section>
 
     <!-- EXPERIENCE SECTION -->
     <section id="experience">
         <h2>Experience</h2>
-        <table style="border-collapse: collapse; width: 60%; margin: 0 auto;">
-            <tr>
-                <td>Barista</td>
-                <td>Compton's Coffee</td>
-                <td>2023-2024</td>
-            </tr>
-            <tr>
-                <td>Dialysis Tech</td>
-                <td>Davita</td>
-                <td>2018-2020</td>
-            </tr>
-            <tr>
-                <td>Office Assistant</td>
-                <td>Generations Healthcare</td>
-                <td>2017-2018</td>
-            </tr>
-            <tr>
-                <td>Sales Employee</td>
-                <td>G-Star</td>
-                <td>2016-2017</td>
-            </tr>
-        </table>
+        <div class="experience-grid">
+            <div class="experience-item">
+                <div class="job-title">Software Development Intern</div>
+                <div class="company">Tech Solutions Inc. - New York, NY</div>
+                <div class="dates">June 2023 - August 2023</div>
+                <ul class="responsibilities">
+                    <li>Developed and maintained web applications</li>
+                    <li>Collaborated with senior developers</li>
+                    <li>Participated in code reviews</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">IT Help Desk Assistant</div>
+                <div class="company">University of Technology</div>
+                <div class="dates">September 2022 - Present</div>
+                <ul class="responsibilities">
+                    <li>Provide technical support to students and faculty</li>
+                    <li>Troubleshoot hardware and software issues</li>
+                    <li>Maintain IT documentation</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <!-- PROJECTS SECTION -->

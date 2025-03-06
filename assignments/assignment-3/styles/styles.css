@@ -24,12 +24,21 @@ body {
     color: black;
 }
 
-h1, h2, h3, {
+header h1{
+    color:white;
+}
+
+header h2 {
+    color: white;
+}
+
+h2, h3 {
     font-family:'Franklin Gothic Medium';
     font-size: 2rem;
     color: #444;
     text-align: center;
-    margin-bottom: auto;
+    margin: 10px auto;
+    display:block;
 }
 
 /*3. Layout & Navigation*/
@@ -40,7 +49,16 @@ header {
     color:white;
 }
 
+.me-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom: 15px;
+}
+
 .me-img {
+    display: flex;
+    justify-content:center;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -63,13 +81,13 @@ nav {
     padding: 0;
 }
 
-.navlinks li {
+.nav-links li {
     display: inline-block;
 }
 
-.navlinks a {
+.nav-links a {
     text-decoration: none;
-    color: black;
+    color: lightslategrey;
     font-size: 1.2em;
     padding: 10px 15pxl;
     transition: color 0.3 ease;
@@ -84,12 +102,26 @@ section {
     width: 60%;
     margin: 40px auto;
     padding: 40px 0;
-    gap: 10 px;
+    gap: 10px;
     list-style: none;
 }
 
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+    margin: 20px 0;
+}
+
+    .image-container img {
+        display: block;
+        width: 30%;
+        height: auto;
+    }
+
 p {
-    width: 60;
+    width: 90%;
     margin: auto;
     text-align: justify;
     line-height: 1.5;
@@ -104,7 +136,7 @@ p {
 }
 
 /*5. Skills*/
-.skills-list {
+.experience table {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -112,14 +144,36 @@ p {
     list-style: none;
     padding: 0;
 }
-    .skills-list li {
+    .experience th {
         background-color: #ffc0fe;
-        padding: .5rem 1 rem;
+        padding: .5rem 1rem;
         border-radius: 20px;
         margin: 5px;
     }
 
-/*6. Responsive Design*/
+/*6. Contact*/
+.contact-links {
+    display: flex;
+    justify-content: center; /* Centers links horizontally */
+    align-items: center; /* Aligns links vertically */
+    gap: 20px; /* Space between links */
+    margin: 20px 0; /* Adds spacing */
+}
+
+    .contact-links a {
+        text-decoration: none;
+        font-size: 1.2em;
+        color: #444;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+        .contact-links a:hover {
+            color: mediumvioletred;
+        }
+
+
+/*7. Responsive Design*/
 @media (max-width: 768px) {
     .nav-links{
         flex-direction:column;
