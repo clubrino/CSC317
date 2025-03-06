@@ -154,10 +154,10 @@ p {
 /*6. Contact*/
 .contact-links {
     display: flex;
-    justify-content: center; /* Centers links horizontally */
-    align-items: center; /* Aligns links vertically */
-    gap: 20px; /* Space between links */
-    margin: 20px 0; /* Adds spacing */
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px;
+    margin: 20px 0; 
 }
 
     .contact-links a {
