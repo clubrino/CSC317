@@ -5,7 +5,9 @@ I would like the website to have colors similar to 90s romantic comedy posters. 
 The color scheme must be whimsical and pastel. 
 I want the font to be similar to Vogue's. 
 Hover effects on buttons and links, in pink.
-I want the spacing to have the contents in the middle of the page. 
+Hover effects on buttons and links, in pink.
+I want the contents in a bubble. The buttons to be interactive with color.  
+    The Experience section should be like a grid.  
 
 This is the file I am working with.
     index.html
@@ -13,127 +15,154 @@ This is the file I am working with.
 
 /* Import Vogue-like Font */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
-
-/* Global Styles */
+/* General Styles */
 body {
-    font-family: 'Playfair Display', serif;
-    background-color: #D4E6C3; /* Soft pastel green */
-    color: #5A3E36; /* Deep chic brown */
+    font-family: 'Didot', serif; /* Vogue-style font */
+    background-color: #FAE1DD; /* Soft peach pastel */
+    color: #5D3A3A; /* Warm, muted brown */
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
-/* Navigation Bar */
+/* Navigation */
 nav {
-    background-color: #B5C8A9; /* Muted botanical green */
+    background-color: #FFB5A7; /* Warm pink */
     padding: 15px;
+    border-radius: 25px;
+    width: 90%;
+    margin-top: 10px;
 }
 
-    nav ul {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+    .nav-links li {
+        margin: 0 15px;
     }
 
-    nav a {
+    .nav-links a {
         text-decoration: none;
+        color: #6D6875;
         font-size: 1.2em;
-        color: #732D5D; /* Rich plum */
-        font-weight: bold;
-        transition: color 0.3s ease;
+        transition: color 0.3s;
     }
 
-        nav a:hover {
-            color: #FF4FA1; /* Bold pink */
+        .nav-links a:hover {
+            color: #FF69B4; /* Hot pink hover effect */
         }
 
 /* Header */
 header {
-    background-color: #FAD6B5; /* Soft peach */
-    color: white;
-    padding: 30px 0;
+    background-color: #FCD5CE;
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: 20px;
+    width: 90%;
 }
 
-/* Sections */
-section {
-    width: 80%;
-    margin: auto;
-    padding: 40px 0;
+/* About Me */
+#about {
+    background-color: #FFCDB2;
+    padding: 20px;
+    border-radius: 30px;
+    width: 90%;
 }
 
-h2 {
-    font-size: 2em;
-    color: #732D5D; /* Rich plum */
+/* Education */
+#education {
+    background-color: #FFB4A2;
+    padding: 20px;
+    border-radius: 30px;
+    width: 90%;
 }
 
-/* About Me Section */
-#about p {
-    text-align: justify;
-    width: 60%;
-    margin: auto;
-    line-height: 1.6;
+/* Experience - Grid Layout */
+#experience {
+    background-color: #F8EDEB;
+    padding: 20px;
+    border-radius: 30px;
+    width: 90%;
 }
 
-/* Education Section */
-#education ul {
-    text-align: left;
-    width: 60%;
-    margin: auto;
-}
-
-/* Projects Section */
-#projects ul {
-    list-style: none;
-    padding: 0;
-}
-
-/* Contact Section */
-.contact-links {
-    display: flex;
-    justify-content: center;
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
 }
 
-    .contact-links a {
-        text-decoration: none;
-        font-size: 1.2em;
-        color: #5A3E36; /* Deep brown */
-        font-weight: bold;
-        transition: color 0.3s;
-    }
-
-        .contact-links a:hover {
-            color: #FF4FA1; /* Bold pink */
-        }
-
-/* Buttons & Links */
-button, a {
-    transition: all 0.3s;
+.experience-item {
+    background-color: #FEC89A;
+    padding: 15px;
+    border-radius: 15px;
 }
 
-button {
-    background-color: #2D5FAA; /* Vibrant blue */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+/* Projects */
+#projects {
+    background-color: #FFAFCC;
+    padding: 20px;
+    border-radius: 30px;
+    width: 90%;
+}
+
+.project-card {
+    background-color: #FEC5BB;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+/* Contact */
+#contact {
+    background-color: #BDE0FE;
+    padding: 20px;
+    border-radius: 30px;
+    width: 90%;
+}
+
+.contact-links a {
+    color: #6D6875;
+    text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+    .contact-links a:hover {
+        color: #FF69B4;
+    }
+
+/* Buttons */
+button {
+    background-color: #FFB5A7;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 10px;
 }
 
     button:hover {
-        background-color: #FF4FA1; /* Bold pink */
+        background-color: #FF69B4;
+        transform: scale(1.05);
     }
 
-/* Footer */
-footer {
-    background-color: #B5C8A9; /* Muted botanical green */
-    color: white;
-    padding: 20px;
-    margin-top: 30px;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 
