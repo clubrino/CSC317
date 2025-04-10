@@ -99,7 +99,7 @@ body {
     grid-column: span 2;
 }
 
-/* Responsive tweaks */
+/* Responsive */
 @media (max-width: 400px) {
     .calculator {
         width: 90%;

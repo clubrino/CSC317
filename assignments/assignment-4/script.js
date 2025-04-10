@@ -4,12 +4,12 @@ let previousInput = '';
 let operator = null;
 let resetNext = false;
 
-// Update display
+//display
 function updateDisplay() {
     display.textContent = currentInput;
 }
 
-// Handle number or decimal
+//handle integer
 function appendNumber(num) {
     if (resetNext) {
         currentInput = num === '.' ? '0.' : num;
@@ -22,7 +22,7 @@ function appendNumber(num) {
     updateDisplay();
 }
 
-// Handle operator
+//handle operator
 function chooseOperator(op) {
     if (operator && !resetNext) {
         compute();
@@ -32,7 +32,7 @@ function chooseOperator(op) {
     resetNext = true;
 }
 
-// Compute result
+//compute
 function compute() {
     const prev = parseFloat(previousInput);
     const curr = parseFloat(currentInput);
@@ -56,7 +56,7 @@ function compute() {
     updateDisplay();
 }
 
-// Clear (AC)
+//clear(ac)
 function clear() {
     currentInput = '0';
     previousInput = '';
@@ -65,7 +65,7 @@ function clear() {
     updateDisplay();
 }
 
-// Toggle +/-
+//toggle sign
 function toggleSign() {
     if (currentInput !== '0') {
         currentInput = (parseFloat(currentInput) * -1).toString();
@@ -73,13 +73,13 @@ function toggleSign() {
     }
 }
 
-// Percentage
+//percentage
 function percent() {
     currentInput = (parseFloat(currentInput) / 100).toString();
     updateDisplay();
 }
 
-// Button click events
+//button click
 document.querySelectorAll('.btn').forEach(btn => {
     btn.addEventListener('click', () => {
         const key = btn.dataset.key;
@@ -100,7 +100,7 @@ document.querySelectorAll('.btn').forEach(btn => {
     });
 });
 
-// Keyboard input support
+//keyboard support 
 document.addEventListener('keydown', (e) => {
     if (!isNaN(e.key) || e.key === '.') {
         appendNumber(e.key);
