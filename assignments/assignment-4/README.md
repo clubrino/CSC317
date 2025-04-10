@@ -5,20 +5,17 @@ This is a web-based calculator built using **HTML**, **CSS**, and **JavaScript**
 ## Features
 
 - Basic math: add, subtract, multiply, divide
-- Extra functions: clear, toggle sign (±), percentage, decimal
+- Extra functions: clear, toggle sign (Â±), percentage, decimal
 - Responsive design
 - Keyboard support
 - Error handling
 
 ## Files
 
-- `index.html` – structure of the calculator
-- `style.css` – styles to match iOS look
-- `script.js` – calculator logic
-- `README.md` – this file
-
-
-[View on GitHub Pages](https://github.com/clubrino/CSC317/assignments/assignment-4  
+- `index.html` â€“ structure of the calculator
+- `style.css` â€“ styles to match iOS look
+- `script.js` â€“ calculator logic
+- `README.md` â€“ this file
 
 ## Concepts Used
 
