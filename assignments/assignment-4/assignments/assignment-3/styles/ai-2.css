@@ -1,0 +1,513 @@
+/*I am a student that is learning the basics of CSS. I need to create a simple CSS file for my portfolio website inspired by the botanical San Francisco garden in the art style of Mucha. I need styling for these sections: navigation, header section, about me, education, projects, contact form.
+I would like the website to have colors similar to 90s romantic comedy posters. Specifically movies like My Best Friend's Wedding, 13 going on 30, and Practical Magic. I want the layout to be universal for both mobile and desktop. Please break down the different parts of CSS and explain what it does. 
+The color scheme must be whimsical and pastel. 
+I want the font to be similar to Vogue's. 
+Hover effects on buttons and links, in pink.
+I want the spacing to have the contents in the middle of the page. 
+This is the file I am working with.
+    index.html
+    mucha.jpg https://prague-now.com/museums/mucha-museum-and-the-master-of-art-nouveau/
+    vogue24.jpg https://www.vogue.com/article/kaia-gerber-december-2024-cover-interview
+    13goingon30.jpg https://www.imdb.com/title/tt0337563/mediaviewer/rm3275169281/
+
+*/
+/* GLOBAL STYLES */
+:root {
+    /* Color scheme inspired by 90s rom-coms and botanical gardens */
+    --primary-color: #eebee4; /* Light pink from your header */
+    --secondary-color: #a7d7c5; /* Mint green (botanical) */
+    --accent-color: #f08080; /* Light coral (for hover effects) */
+    --text-color: #444444; /* Dark gray for text */
+    --light-bg: #f9f6f0; /* Creamy background */
+    --header-font: 'Didot', 'Bodoni MT', 'Palatino', serif; /* Vogue-style font */
+    --body-font: 'Century Gothic', 'Futura', sans-serif;
+}
+
+/* BASE STYLES */
+body {
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: var(--header-font);
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+/* Content container to keep things centered */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADER STYLES */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 3rem 0 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+    header::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 30px;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 30" preserveAspectRatio="none"><path d="M0,0 Q300,60 600,0 T1200,0 V30 H0 Z" fill="%23f9f6f0"/></svg>');
+        background-size: cover;
+    }
+
+    header img {
+        border-radius: 50%;
+        border: 5px solid white;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        margin-bottom: 1rem;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        margin: 0.5rem 0;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
+
+    header h2 {
+        font-weight: 300;
+        margin: 0.5rem 0;
+        font-size: 1.5rem;
+    }
+
+/* NAVIGATION STYLES */
+nav {
+    padding: 1rem 0;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+        nav ul li {
+            display: inline;
+        }
+
+    nav a {
+        text-decoration: none;
+        color: var(--text-color);
+        font-weight: bold;
+        font-size: 1.1rem;
+        position: relative;
+        padding: 0.5rem 0;
+        transition: color 0.3s;
+    }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            transition: width 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+            nav a:hover::after {
+                width: 100%;
+            }
+
+/* SECTION STYLES */
+section {
+    margin: 4rem 0;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    position: relative;
+}
+
+    section::before {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        height: 20px;
+        background-color: var(--secondary-color);
+        opacity: 0.3;
+        border-radius: 50%;
+        z-index: -1;
+    }
+
+    section h2 {
+        text-align: center;
+        color: var(--text-color);
+        font-size: 2rem;
+        margin-top: 0;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid var(--primary-color);
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/* ABOUT SECTION */
+#about p {
+    width: 80%;
+    margin: 1rem auto;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+    gap: 1rem;
+    max-width: 400px;
+    padding: 1rem;
+    background-color: var(--light-bg);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+    .media-container img {
+        border-radius: 5px;
+        max-width: 100%;
+        transition: transform 0.3s;
+    }
+
+        .media-container img:hover {
+            transform: scale(1.05);
+        }
+
+    .media-container audio {
+        width: 100%;
+    }
+
+/* EDUCATION SECTION */
+#education ul {
+    width: 80%;
+    margin: 0 auto;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+#education li {
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+    #education li::before {
+        content: "•";
+        color: var(--primary-color);
+        font-size: 1.5rem;
+        position: absolute;
+        left: 0;
+        top: -0.5rem;
+    }
+
+#education ul ul {
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+    #education ul ul li {
+        margin-bottom: 0.5rem;
+    }
+
+        #education ul ul li::before {
+            content: "-";
+            font-size: 1rem;
+            top: 0;
+        }
+
+#education strong {
+    font-family: var(--header-font);
+    letter-spacing: 0.5px;
+    font-size: 1.2rem;
+}
+
+/* EXPERIENCE SECTION */
+#experience table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+#experience th, #experience td {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #f0f0f0;
+}
+
+#experience tr:nth-child(even) {
+    background-color: var(--light-bg);
+}
+
+#experience tr:hover {
+    background-color: rgba(238, 190, 228, 0.1);
+}
+
+/* PROJECTS SECTION */
+#projects ul {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#projects li {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: var(--light-bg);
+    border-radius: 10px;
+    border-left: 4px solid var(--secondary-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+    #projects li:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+#projects h3 {
+    margin-top: 0;
+    color: var(--text-color);
+    font-size: 1.4rem;
+}
+
+#projects p {
+    margin-bottom: 0;
+}
+
+/* CONTACT SECTION */
+#contact {
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+    .contact-links a {
+        text-decoration: none;
+        color: var(--text-color);
+        font-weight: bold;
+        padding: 0.8rem 1.5rem;
+        border: 2px solid var(--primary-color);
+        border-radius: 30px;
+        transition: all 0.3s;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+        .contact-links a::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background-color: var(--primary-color);
+            transition: all 0.3s;
+            z-index: -1;
+        }
+
+        .contact-links a:hover {
+            color: white;
+        }
+
+            .contact-links a:hover::before {
+                height: 100%;
+            }
+
+/* LOCATION SECTION */
+#location {
+    text-align: center;
+}
+
+    #location iframe {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+/* FOOTER STYLES */
+footer {
+    background-color: #808080;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    position: relative;
+}
+
+    footer::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 20px;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 20" preserveAspectRatio="none"><path d="M0,20 Q300,0 600,20 T1200,20 V0 H0 Z" fill="%23808080"/></svg>');
+        background-size: cover;
+        top: -20px;
+    }
+
+    footer p {
+        width: auto;
+        margin: 0;
+    }
+
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    #about p, #education ul, #experience table, #projects ul {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    .contact-links {
+        gap: 1rem;
+    }
+}
+
+/* MUCHA-INSPIRED DECORATIVE ELEMENTS */
+/* Subtle floral background pattern */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M30,10 Q50,0 70,10 T85,50 T70,90 T30,90 T15,50 T30,10" fill="none" stroke="%23eebee4" stroke-width="0.5" opacity="0.3"/></svg>');
+    background-size: 200px 200px;
+    opacity: 0.05;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Art Nouveau inspired decorative divider */
+.section-divider {
+    height: 40px;
+    margin: 2rem 0;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="40" viewBox="0 0 200 40"><path d="M0,20 C50,5 150,35 200,20" stroke="%23a7d7c5" fill="none" stroke-width="1"/><path d="M65,20 C80,15 90,25 100,20 C110,15 120,25 135,20" stroke="%23eebee4" fill="none" stroke-width="1"/><circle cx="100" cy="20" r="3" fill="%23f08080"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+/*
+    Let me explain the key components of this CSS file:
+Color Scheme & Typography
+
+I've used a pastel color palette with pinks and mint greens inspired by 90s romantic comedies and botanical themes
+The Vogue-inspired typography uses serif fonts like Didot and Bodoni for headings
+Variables at the top make it easy for you to adjust colors and fonts
+
+Layout Structure
+
+The content is centered using the .container class with a responsive width (80% on desktop, 95% on mobile)
+Each section has consistent spacing and styling with subtle box shadows
+All content is responsive and will work on both mobile and desktop
+
+Art Nouveau/Mucha Influences
+
+Decorative floral background pattern as a subtle texture
+Curved, flowing section dividers reminiscent of Mucha's organic lines
+Soft, rounded shapes and botanical color palette
+
+Interactive Elements
+
+Navigation links have a pink underline effect on hover
+Project cards subtly rise up on hover
+Contact links have a pink fill animation on hover
+All interactive elements use smooth transitions
+
+Section-Specific Styling
+
+Header: Light pink background with a wavy bottom edge and circular profile image
+Navigation: Sticky navigation with animated underline effects
+About: Clean layout with justified text and a special media container
+Education: Custom bullet points and nested lists with proper indentation
+Experience: Striped table with hover effects
+Projects: Card-style layout with subtle hover animations
+Contact: Button-style links with fill effects on hover
+Location: Embedded map with rounded corners and shadow
+Footer: Gray background with a wavy top edge
+
+Mobile Responsiveness
+
+The media query adjusts spacing, font sizes, and content width for smaller screens
+The navigation adapts with smaller gaps
+All containers become full-width on mobile
+
+To implement this CSS:
+
+Create a file named styles.css in the same directory as your HTML file
+Copy this code into that file
+Link the CSS file in your HTML by adding this to your <head> section:
+htmlCopy<link rel="stylesheet" href="styles.css">
+
+Add the .container class to main content sections if needed
+You may want to add the .section-divider div between sections for the decorative element
+
+This design combines the whimsical, pastel aesthetic of 90s rom-coms with Art Nouveau/Mucha-inspired botanical elements while maintaining a clean, professional portfolio structure.
+*/
