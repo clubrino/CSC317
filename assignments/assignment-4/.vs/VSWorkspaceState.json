@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\scripts",
+    "\\styles"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\scripts\\calculator.js",
   "PreviewInSolutionExplorer": false
 }
