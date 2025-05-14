@@ -13,7 +13,7 @@ showcases the lessons and skills learned in CSC317. This project demonstrates a 
 
 - Assignment-4: Javascript Calculator
 
-- final: Movie Review Platform
+- Final: Movie Review Platform
 
 ### Prerequisites
 
