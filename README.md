@@ -26,16 +26,18 @@ showcases the lessons and skills learned in CSC317. This project demonstrates a 
 
 ```bash
 git clone https://github.com/clubrino/CSC317.git
-cd CSC317/final
+cd CSC317/
 ```
 
 ### 2.Open 'index.html' into your browser.
 
 ### 3. Navigate browser and click 'Projects'
 
-### 4. Click the link Movie Review Platform review
+### 4. Click the link 'Javascript Caclulator'
 
-### 5. Render.com will deploy demo
+### 5.. Click the link 'Movie Review Platform'
+
+### 6. Render.com will deploy live demo
 
 ---
 
