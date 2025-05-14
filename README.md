@@ -7,13 +7,13 @@ showcases the lessons and skills learned in CSC317. This project demonstrates a 
 
 ## What's Included
 
--Assignment-2:HTML Personal Portfolio Website Assignment
+- Assignment-2: HTML Personal Portfolio Website Assignment
 
--Assignment-3:Human vs. AI CSS Challenge
+- Assignment-3: Human vs. AI CSS Challenge
 
--Assignment-4:Javascript Calculator
+- Assignment-4: Javascript Calculator
 
--final: Movie Review Platform
+- final: Movie Review Platform
 
 ### Prerequisites
 
