@@ -1,8 +1,11 @@
 # CSC 317 Final Submission
 
 **Name:** Cielina Lubrino
+
 **Student ID:** 923307993
+
 **GitHub Username:** clubrino  
+
 **Assignment Number:** 5  
 
 ---
