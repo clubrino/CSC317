@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\audio",
+    "\\images",
+    "\\prompts",
+    "\\scripts",
     "\\styles"
   ],
-  "SelectedNode": "\\SUBMISSION.md",
   "PreviewInSolutionExplorer": false
 }
