@@ -23,15 +23,20 @@ git clone https://github.com/clubrino/CSC317.git
 cd CSC317/final
 ```
 
+
 ## 2.Open 'index.html' into your browser.
+
 
 ## 3. Navigate browser and click 'Projects'
 
+
 ## 4. Click the link Movie Review Platform review
+
 
 ## 5. Render.com will deploy demo
 
----
+
+
 
 ## Folder Structure
 
