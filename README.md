@@ -6,9 +6,13 @@ This class class project, I learned how to develop my skills in web development 
 showcases the lessons and skills learned in CSC317. This project demonstrates a responsive, multi-section website built using semantic HTML5, custom CSS, and JavaScript, with integrated multimedia elements such as audio, images, and interactive features.
 
 ## What's Included
+
 -Assignment-2:HTML Personal Portfolio Website Assignment
+
 -Assignment-3:Human vs. AI CSS Challenge
+
 -Assignment-4:Javascript Calculator
+
 -final: Movie Review Platform
 
 ### Prerequisites
