@@ -5,6 +5,12 @@
 This class class project, I learned how to develop my skills in web development by creating a personal portfolio. This portfolio
 showcases the lessons and skills learned in CSC317. This project demonstrates a responsive, multi-section website built using semantic HTML5, custom CSS, and JavaScript, with integrated multimedia elements such as audio, images, and interactive features.
 
+## What's Included
+-Assignment-2:HTML Personal Portfolio Website Assignment
+-Assignment-3:Human vs. AI CSS Challenge
+-Assignment-4:Javascript Calculator
+-final: Movie Review Platform
+
 ### Prerequisites
 
 * Git
@@ -19,13 +25,13 @@ git clone https://github.com/clubrino/CSC317.git
 cd CSC317/final
 ```
 
-## 2.Open 'index.html' into your browser.
+### 2.Open 'index.html' into your browser.
 
-## 3. Navigate browser and click 'Projects'
+### 3. Navigate browser and click 'Projects'
 
-## 4. Click the link Movie Review Platform review
+### 4. Click the link Movie Review Platform review
 
-## 5. Render.com will deploy demo
+### 5. Render.com will deploy demo
 
 ---
 
