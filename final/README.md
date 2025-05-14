@@ -24,45 +24,52 @@ cd CSC317/final
 ---
 
 ## Folder Structure
-
-final/
-├── audio/
-│   └── 05.mp3                        
+CSC317/
+├── assignments/
+│   ├── assignment-2/
+│   ├── assignment-3/
+│   └── assignment-4/
 │
-├── images/                           
-│   ├── Belleville-NJ-Seal.png
-│   ├── calculator.png
-│   ├── favicon-32x32.png
-│   ├── lenny.jpg
-│   ├── me.jpg
-│   ├── movie.png
-│   ├── sfsulogo.png
-│   ├── turntable.jpg
-│   └── 192x192.png
+├── final/
+│   ├── audio/
+│   │   └── 05.mp3
+│   │
+│   ├── images/
+│   │   ├── Belleville-NJ-Seal.png
+│   │   ├── calculator.png
+│   │   ├── favicon-32x32.png
+│   │   ├── lenny.jpg
+│   │   ├── me.jpg
+│   │   ├── movie.png
+│   │   ├── sfsulogo.png
+│   │   ├── turntable.jpg
+│   │   └── 192x192.png
+│   │
+│   ├── prompts/
+│   │   ├── ai-1-css-prompt.md
+│   │   ├── ai-2-css-prompt.md
+│   │   ├── mucha.jpg
+│   │   ├── vogue24.webp
+│   │   └── 13goingon30.jpg
+│   │
+│   ├── scripts/
+│   │   ├── calculator.js
+│   │   └── hello.js
+│   │
+│   ├── styles/
+│   │   ├── ai-1.css
+│   │   ├── ai-2.css
+│   │   ├── calculator.css
+│   │   ├── hybrid.css
+│   │   └── styles.css
+│   │
+│   ├── index.html
+│   ├── calculator.html
+│   ├── README.md
+│   ├── SUBMISSION.md
+│   └── .gitignore
 │
-├── prompts/                          
-│   ├── ai-1-css-prompt.md
-│   ├── ai-2-css-prompt.md
-│   ├── mucha.jpg
-│   ├── vogue24.webp
-│   └── 13goingon30.jpg
-│
-├── scripts/                         
-│   ├── calculator.js
-│   └── hello.js
-│
-├── styles/                          
-│   ├── ai-1.css
-│   ├── ai-2.css
-│   ├── calculator.css
-│   ├── hybrid.css
-│   └── styles.css
-│
-├── .gitignore                       
-├── calculator.html                 
-├── index.html                       
-├── README.md                        
-└── SUBMISSION.md                    
-
+├── README.md          # Root-level project overview
+└── .gitignore         # Root-level Git ignore rules
 
 
